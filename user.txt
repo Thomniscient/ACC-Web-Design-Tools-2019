@@ -1,0 +1,11 @@
+u8789303
+
+^@eu%#(N~3
+
+host: cois-linux.austincc.edu
+
+Port: 22
+
+To access my website using the browser
+
+https://cois-linux.austincc.edu/~u8789303

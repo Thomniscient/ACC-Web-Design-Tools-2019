@@ -1,0 +1,150 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.ttf') format('truetype'), url('cac_champagne.woff') format('woff');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Thomas Barker
+   Date:   09/14/19
+   
+   Filename: lake_styles.css
+
+*/
+
+/*Structural Styles*/
+
+html {
+    font-family: Arial;
+    background-color: BlanchedAlmond;
+    color: rgb(51, 102, 0);
+}
+
+body > footer {
+    background-color: rgb(102, 0, 51);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* Header Styles */
+
+section#leftcol h1 {
+    font-family: Champagne;
+    font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#leftcol aside > h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+section#leftcol aside > h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+section#rightcol h2 {
+    font-family: Champagne;
+    font-size: 1.75em;
+    font-weight: normal;
+}
+
+
+/* Navigation Styles */
+
+header > nav {
+    font-family: Arial;
+    background-color: rgb(102, 0, 51);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header > nav > ul > li > a:link, header > nav > ul > li > a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header > nav > ul > li > a:hover, header > nav > ul > li > a:active {
+    color: bisque;
+    text-decoration: none;
+}
+
+/* Section Styles */
+
+section#leftcol aside {
+    font-family: Arial;
+    background-color: rgb(128, 128, 0);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgba(255, 182, 193, 0.65);    
+}
+
+section#leftcol aside > p {
+    font-size: .9em;
+    padding-left: 15px;
+}
+
+section#leftcol aside > ul > li {
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+section#rightcol {
+    background-color: rgba(255, 182, 193, 0.65);
+    padding-left: 20px;
+    color: rgb(102, 0, 51);
+}
+
+section#rightcol > nav > ul {
+    list-style-type: none;
+    font-size: 0.9em;
+    }
+
+section#rightcol > nav > ul > li > a:link, section#rightcol > nav > ul > li > a:visited {
+    font-family: Arial;
+    color: rgb(51, 102, 0);
+    text-decoration: none;
+}
+
+section#rightcol > nav > ul > li > a:hover, section#rightcol > nav > ul > li > a:active {
+    font-family: Arial;
+    color: rgb(0, 56, 0);
+    text-decoration: none;
+}
+
+/* Blockquote Styles */
+
+section blockquote {
+  font-size: 0.95em;
+  font-family: 'Times New Roman', cursive;
+  padding: 10px;
+  quotes: "\201C" "\201D"
+}
+
+section blockquote::before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 1.6em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section blockquote::after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 1.6em;
+  font-family: 'Times New Roman', Times, serif;
+}
